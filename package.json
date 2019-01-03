@@ -1,0 +1,29 @@
+{
+  "name": "pwa-training",
+  "version": "1.0.0",
+  "description": "Progressive Web Apps training",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/a-soliman/pwa-training.git"
+  },
+  "keywords": [
+    "PWA",
+    "pwa",
+    "javascript",
+    "fullstack",
+    "frontend",
+    "backend",
+    "responsive",
+    "design"
+  ],
+  "author": "Ahmed Soliman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-soliman/pwa-training/issues"
+  },
+  "homepage": "https://github.com/a-soliman/pwa-training#readme"
+}
