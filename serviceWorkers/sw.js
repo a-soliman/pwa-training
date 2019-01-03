@@ -1,8 +1,18 @@
 // Service Worker
-self.addEventListener("install", e => {
-  self.skipWaiting();
-});
+self.addEventListener("fetch", e => {
+  //   if (e.request.url.endsWith("/greet")) {
+  //     let headers = new Headers({ "Content-Type": "text/html" });
+  //     let customRes = new Response("<h1>Hello world</h1>", { headers });
+  //     e.respondWith(customRes);
+  //   }
 
-self.addEventListener("activate", e => {
-  console.log("now sw activated");
+  if (e.request.url.endsWith("camera_feed.html")) {
+    e.respondWith(
+      fetch(e.request).then(res => {
+        if (res.ok) return res;
+
+        return new Response("Camera feed is not available at the moment!");
+      })
+    );
+  }
 });

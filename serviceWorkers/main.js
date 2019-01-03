@@ -8,3 +8,10 @@ if (navigator.serviceWorker) {
     })
     .catch(console.log);
 }
+
+// Get camera feed
+fetch("./camera_feed.html")
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById("camera").innerHTML = html;
+  });
