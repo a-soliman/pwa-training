@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/a-soliman/pwa-training/issues"
   },
-  "homepage": "https://github.com/a-soliman/pwa-training#readme"
+  "homepage": "https://github.com/a-soliman/pwa-training#readme",
+  "dependencies": {
+    "web-push": "^3.3.3"
+  }
 }
