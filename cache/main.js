@@ -18,14 +18,14 @@ if (window.caches) {
   caches.open("pwa-v1.1").then(cache => {
     /* ADDING FILES/ REQUESTS TO THE CACHE */
     //cache.addAll(["./index.html", "./style.css", "main.js"]);
-
     /* REMOVING FROM THE CACHE */
     //cache.delete("./style.css");
-
     /* RETRIVING */
-    cache
-      .match("./index.html")
-      .then(res => res.text())
-      .then(console.log);
+    // cache
+    //   .match("./index.html")
+    //   .then(res => res.text())
+    //   .then(console.log);
+    /* ADDING CUSTOM RESPONSE */
+    //cache.put("./index.html", new Response("My own html"));
   });
 }
